@@ -1,5 +1,15 @@
 {
-  "include": ["env.d.ts", "**/*.ts", "**/*.tsx"],
+  "include": ["env.d.ts", "**/*.ts", "**/*.tsx", "scripts/**/*"],
+  "exclude": [
+    "./public",
+    "./build",
+    "./node_modules/**/*",
+    "./packages",
+    "**/*.gql",
+    "**/*.liquid",
+    "./**/dist/*",
+    "**/*.scss"
+  ],
   "compilerOptions": {
     "lib": ["DOM", "DOM.Iterable", "ES2022"],
     "strict": true,
@@ -16,6 +26,16 @@
     "moduleResolution": "Bundler",
     "target": "ES2022",
     "baseUrl": ".",
-    "types": ["node"]
+    "paths": {
+      "~/presentation/*": ["./app/presentation/components/*"],
+      "~/*": ["./app/*"],
+      "@/extensions/*": ["./extensions/*"]
+    },
+    "types": ["vitest/globals", "node", "@shopify/app-bridge-types"],
+    "esModuleInterop": true
+  },
+  "ts-node": {
+    "esm": true,
+    "experimentalSpecifierResolution": "node"
   }
 }

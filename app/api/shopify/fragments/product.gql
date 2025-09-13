@@ -1,0 +1,51 @@
+fragment ProductOptionNode on ProductOption {
+  id
+  name
+}
+
+fragment ProductNode on Product {
+  id
+  title
+  handle
+  totalInventory
+  status
+  updatedAt
+  variantsCount {
+    count
+  }
+  priceRangeV2 {
+    maxVariantPrice {
+      amount
+      currencyCode
+    }
+    minVariantPrice {
+      amount
+      currencyCode
+    }
+  }
+  compareAtPriceRange {
+    maxVariantCompareAtPrice {
+      amount
+      currencyCode
+    }
+    minVariantCompareAtPrice {
+      amount
+      currencyCode
+    }
+  }
+  options {
+    ...ProductOptionNode
+  }
+  # media(first: 250) {
+  #   ...MediaEdges
+  # }
+}
+
+fragment ProductEdges on ProductConnection {
+  edges {
+    node {
+      ...ProductNode
+    }
+    cursor
+  }
+}

@@ -1,6 +1,10 @@
 {
   "recommendations": [
     "graphql.vscode-graphql",
+    "graphql.vscode-graphql-syntax",
     "shopify.polaris-for-vscode",
+    "shopify.vscode-shopify-dev-assistant",
+    "christian-kohler.path-intellisense",
+    "seatonjiang.gitmoji-vscode"
   ]
 }

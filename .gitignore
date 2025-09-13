@@ -1,25 +1,41 @@
-node_modules
-.DS_Store
-
+/node_modules
 /.cache
 /build
 /app/build
 /public/build/
 /public/_dev
 /app/public/build
-/prisma/dev.sqlite
-/prisma/dev.sqlite-journal
-database.sqlite
 
 .env
-.env.*
 
+.idea
+.shopify
+.sentryclirc
 package-lock.json
-yarn.lock
-pnpm-lock.yaml
+shopify.app*.toml
 
-/extensions/*/dist
+# Database
+/prisma/*/*.db
+/prisma/*.db
+/prisma/*.db-journal
+/prisma/dev.sqlite
+/prisma/dev.sqlite-journal
+/prisma/*/*_local
+/prisma/*/*.toml
+/prisma_local
 
-# Ignore shopify files created during app dev
-.shopify/*
-.shopify.lock
+# Extensions
+coverage/
+extensions/*/dist/
+extensions/*/node_modules/
+
+# Packages
+packages/*/node_modules/
+**/dist
+**/node_modules
+**/.turbo
+**/.eslintcache
+
+
+/scripts/eslint-report.json
+/public/locales/warnings.json

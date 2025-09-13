@@ -9,8 +9,11 @@ import {
   BlockStack,
 } from "@shopify/polaris";
 import { TitleBar } from "@shopify/app-bridge-react";
+import { useProductsQuery } from "~/api/shopify/queries/products.generated";
 
 export default function AdditionalPage() {
+  useQueryProductShopify();
+
   return (
     <Page>
       <TitleBar title="Additional page" />
@@ -81,3 +84,21 @@ function Code({ children }: { children: React.ReactNode }) {
     </Box>
   );
 }
+const useQueryProductShopify = () => {
+  const { data, error, isLoading, isError } = useProductsQuery(
+    { first: 10 },
+    {
+      enabled: true,
+    },
+  );
+
+  if (isError) {
+    console.log("🚀 ~ onError ~ error:", error);
+  }
+
+  if (data) {
+    console.log("🚀 ~ onSuccess ~ data:", data);
+  }
+
+  return { data, error, isLoading, isError };
+};

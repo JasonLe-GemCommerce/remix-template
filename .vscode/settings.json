@@ -1,0 +1,30 @@
+{
+  "cSpell.words": [
+  ],
+
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.ts": "explicit",
+    "source.fixAll.eslint": "explicit",
+    "source.removeUnusedImports": "explicit",
+    "source.addMissingImports.ts": "explicit",
+  },
+
+  "typescript.format.enable": true,
+  "typescript.tsserver.enableTracing": true,
+  "typescript.referencesCodeLens.enabled": true,
+  "typescript.updateImportsOnFileMove.enabled": "never",
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true,
+    "tailwindCSS.validate": true
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+
+  "files.trimTrailingWhitespace": true,
+  "files.insertFinalNewline": true,
+  "files.trimFinalNewlines": true
+}
