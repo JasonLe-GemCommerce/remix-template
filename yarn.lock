@@ -1153,14 +1153,14 @@
     change-case-all "1.0.15"
     tslib "~2.6.0"
 
-"@graphql-codegen/typescript-operations@4.5.0", "@graphql-codegen/typescript-operations@^4.0.1", "@graphql-codegen/typescript-operations@^4.1.0", "@graphql-codegen/typescript-operations@^4.5.1":
-  version "4.5.0"
-  resolved "https://registry.npmjs.org/@graphql-codegen/typescript-operations/-/typescript-operations-4.5.0.tgz"
-  integrity sha512-HIu9xB124MVAD1TTGM+iDeJbxtmm0dOolgEEr2uPEBH89i3ggmy+NsXGt7TrOQVDKumv5Df+6DTb59Hmc1qY7g==
+"@graphql-codegen/typescript-operations@4.6.1", "@graphql-codegen/typescript-operations@^4.0.1", "@graphql-codegen/typescript-operations@^4.1.0", "@graphql-codegen/typescript-operations@^4.5.1":
+  version "4.6.1"
+  resolved "https://registry.yarnpkg.com/@graphql-codegen/typescript-operations/-/typescript-operations-4.6.1.tgz#763eda28c77fddee2b9ae9bd7baad050cffff0a5"
+  integrity sha512-k92laxhih7s0WZ8j5WMIbgKwhe64C0As6x+PdcvgZFMudDJ7rPJ/hFqJ9DCRxNjXoHmSjnr6VUuQZq4lT1RzCA==
   dependencies:
     "@graphql-codegen/plugin-helpers" "^5.1.0"
-    "@graphql-codegen/typescript" "^4.1.4"
-    "@graphql-codegen/visitor-plugin-common" "5.7.0"
+    "@graphql-codegen/typescript" "^4.1.6"
+    "@graphql-codegen/visitor-plugin-common" "5.8.0"
     auto-bind "~4.0.0"
     tslib "~2.6.0"
 
@@ -1175,7 +1175,7 @@
     change-case-all "1.0.15"
     tslib "^2.8.1"
 
-"@graphql-codegen/typescript@^4.0.1", "@graphql-codegen/typescript@^4.0.2", "@graphql-codegen/typescript@^4.1.4", "@graphql-codegen/typescript@^4.1.5", "@graphql-codegen/typescript@^4.1.6":
+"@graphql-codegen/typescript@^4.0.1", "@graphql-codegen/typescript@^4.0.2", "@graphql-codegen/typescript@^4.1.5", "@graphql-codegen/typescript@^4.1.6":
   version "4.1.6"
   resolved "https://registry.npmjs.org/@graphql-codegen/typescript/-/typescript-4.1.6.tgz"
   integrity sha512-vpw3sfwf9A7S+kIUjyFxuvrywGxd4lmwmyYnnDVjVE4kSQ6Td3DpqaPTy8aNQ6O96vFoi/bxbZS2BW49PwSUUA==
@@ -1201,22 +1201,6 @@
     graphql-tag "^2.11.0"
     parse-filepath "^1.0.2"
     tslib "~2.4.0"
-
-"@graphql-codegen/visitor-plugin-common@5.7.0":
-  version "5.7.0"
-  resolved "https://registry.npmjs.org/@graphql-codegen/visitor-plugin-common/-/visitor-plugin-common-5.7.0.tgz"
-  integrity sha512-fvtKYpnDFk5R+SM6emgWtViw70Sc4sMggGTUGIrfLSu91TQqTII5FLFz89qjQEEffwSsJCSq4glW/dN7gAuieA==
-  dependencies:
-    "@graphql-codegen/plugin-helpers" "^5.1.0"
-    "@graphql-tools/optimize" "^2.0.0"
-    "@graphql-tools/relay-operation-optimizer" "^7.0.0"
-    "@graphql-tools/utils" "^10.0.0"
-    auto-bind "~4.0.0"
-    change-case-all "1.0.15"
-    dependency-graph "^0.11.0"
-    graphql-tag "^2.11.0"
-    parse-filepath "^1.0.2"
-    tslib "~2.6.0"
 
 "@graphql-codegen/visitor-plugin-common@5.7.1":
   version "5.7.1"
